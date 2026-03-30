@@ -1,0 +1,1 @@
+{"options":{"viewOn":"payments","pipeline":[{"$match":{"status":"completed"}},{"$group":{"_id":"$payment_type","totalRevenue":{"$sum":"$amount"},"count":{"$sum":{"$numberInt":"1"}},"avgAmount":{"$avg":"$amount"}}},{"$sort":{"totalRevenue":{"$numberInt":"-1"}}}]},"indexes":[],"collectionName":"TotalRevenue_ByType","type":"view"}

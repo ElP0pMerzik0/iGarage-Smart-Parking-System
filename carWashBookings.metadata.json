@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"b3cda2ad7f32472eafb42337bc0b12dc","collectionName":"carWashBookings","type":"collection"}
